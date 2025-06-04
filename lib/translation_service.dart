@@ -35,9 +35,12 @@ class TranslationService {
   final StorageService _storageService;
   final Ref _ref;
 
-  TranslationService(this._ref)
-      : _apiService = ApiService(),
-        _storageService = StorageService();
+  TranslationService(
+    this._ref, {
+    ApiService? apiService,
+    StorageService? storageService,
+  })  : _apiService = apiService ?? ApiService(),
+        _storageService = storageService ?? StorageService();
 
   /// Methode zum Übersetzen von Text
   Future<TranslationResult?> translateText({

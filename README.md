@@ -1,4 +1,4 @@
-# PolyglottTranslater
+# PolyglottTranslator
 
 Eine mehrsprachige Übersetzungs-App basierend auf GPT und Whisper.
 
@@ -8,7 +8,7 @@ Eine mehrsprachige Übersetzungs-App basierend auf GPT und Whisper.
 - Spracherkennung und -übersetzung mit Whisper
 - OCR-Texterkennung mit Google ML Kit
 - Dokumentenübersetzung (PDF, DOCX)
-- Benutzerdefinierte Glossaries für fachspezifische Übersetzungen
+- Benutzerdefinierte Glossare für fachspezifische Übersetzungen
 - Offline-Modus für Übersetzungen ohne Internetverbindung
 - Modernes Blueprint-Design mit lebendigen Animationen
 

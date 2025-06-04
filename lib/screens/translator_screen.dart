@@ -135,6 +135,14 @@ class _TranslatorScreenState extends ConsumerState<TranslatorScreen> {
     });
   }
 
+  Widget _buildBackground(BuildContext context) {
+    try {
+      return AssetsManager.buildBlueprintBackground(context);
+    } catch (e) {
+      return AssetsManager.buildFallbackBlueprintBackground(context);
+    }
+  }
+
   @override
   void dispose() {
     _sourceController.removeListener(_updateSourceText);
@@ -188,11 +196,7 @@ class _TranslatorScreenState extends ConsumerState<TranslatorScreen> {
       ),
       body: Stack(
         children: [
-          try {
-            AssetsManager.buildBlueprintBackground(context)
-          } catch (e) {
-            AssetsManager.buildFallbackBlueprintBackground(context)
-          },
+          _buildBackground(context),
           SafeArea(
             child: Column(
               children: [
