@@ -188,11 +188,13 @@ class _TranslatorScreenState extends ConsumerState<TranslatorScreen> {
       ),
       body: Stack(
         children: [
-          try {
-            AssetsManager.buildBlueprintBackground(context)
-          } catch (e) {
-            AssetsManager.buildFallbackBlueprintBackground(context)
-          },
+          (() {
+            try {
+              return AssetsManager.buildBlueprintBackground(context);
+            } catch (e) {
+              return AssetsManager.buildFallbackBlueprintBackground(context);
+            }
+          })(),
           SafeArea(
             child: Column(
               children: [
