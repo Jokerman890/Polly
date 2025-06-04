@@ -38,7 +38,7 @@ class AssetsManager {
       _logoPath,
       height: height,
       errorBuilder: (context, error, stackTrace) => Text(
-        'PolyglottTranslater',
+        'PolyglottTranslator',
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Theme.of(context).colorScheme.primary,

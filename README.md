@@ -1,4 +1,4 @@
-# PolyglottTranslater
+# PolyglottTranslator
 
 Eine mehrsprachige Übersetzungs-App basierend auf GPT und Whisper.
 

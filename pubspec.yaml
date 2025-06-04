@@ -1,4 +1,4 @@
-name: polyglott_translater
+name: polyglott_translator
 description: Eine mehrsprachige Übersetzungs-App basierend auf GPT und Whisper.
 publish_to: 'none'
 version: 1.0.0+1

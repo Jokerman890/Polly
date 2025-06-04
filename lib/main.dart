@@ -5,18 +5,18 @@ import 'screens/translator_screen.dart';
 void main() {
   runApp(
     const ProviderScope(
-      child: PolyglottTranslaterApp(),
+      child: PolyglottTranslatorApp(),
     ),
   );
 }
 
-class PolyglottTranslaterApp extends StatelessWidget {
-  const PolyglottTranslaterApp({Key? key}) : super(key: key);
+class PolyglottTranslatorApp extends StatelessWidget {
+  const PolyglottTranslatorApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'PolyglottTranslater',
+      title: 'PolyglottTranslator',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
